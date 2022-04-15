@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Fuentes
+font-family: 'Lora', serif;*/
+button.navbar-toggler{
+    border: none; outline:none;
+    }
+.gridIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Lora',serif;
+    width: 100%;
+    min-height: 100vh;
+   
+}
+html{
+    font-size: 62.5%; /*1 rem === 10px*/
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+   
+    position: fixed;
+    width: 100%;
+    color:#f95925ff;
+    font-size: 3rem;
+}
+nav ul{
+    display: flex;
+    gap: 2em;
+    padding-top: 2rem;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#f95925ff;
+}
+/* nav ul li a:hover{
+    opacity: 30%;
+} */
+.nav-item a:hover{
+    opacity: 30%;
+    color:#f95925ff;
+}
+main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+}
+footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background-color: #f0dfd2ff;
+}
+.anuncio{
+    background-color: #f95925ff;
+    width: 100%;
+    height: 60px;
+    color: #f2decfff;
+    font-size: 1.4rem;
+    padding: 1em;
+    text-align: center;
+}
+.divlogo{
+    width: 50%;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+.logo{
+    width: 20rem;
+   
+}
+ul{
+    width: 70%;
+    list-style-type: none;
+    
+}
+nav ul{
+    padding-top: 3rem;
+}
+.sectionFotoBread{
+    padding-top: 25rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+.fotoBread{
+    width: 450px;
+}
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2em;
+}
+.textoIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:left;
+}
+.textoIndex p{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+h4{
+    font-size: 2rem;
+    color: #00af8dff;
+}
+h3{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #00af8dff;
+}
+h2{
+    font-size: 5rem;
+    color: #006855ff;
+}
+.naranja{
+    color: #f95925ff;
+}
+.verde{
+    color: #006855ff;
+}
+.fondomariposa{
+    background-image: url(../img/fondo\ verde.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 300rem;
+}
+.mariposa{
+    width: 250px;
+}
+.divMariposa{
+    width: 100%;
+    padding-left: 10em;
+
+}
+.ourpeople{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+}
+.ourpeople h3{
+    display: flex;
+    justify-content: center;
+}
+.cocinerosDiv{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10em;
+}
+.cocinero{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+.cocinero h2{
+    text-align: center;
+    color: #f2decfff;
+}
+.cocinero h4{
+    text-align: left;
+}
+.cocinero p{
+    text-align: left;
+    font-size: 2rem;
+    color: #f2decfff;
+    font-weight: 600;
+}
+.cocinerosFoto{
+    width: 400px;
+}
+.footerFondoSelva{
+    background-image: none;
+    height: 300px;
+    padding-top: -20em;
+    color: #f2decfff;
+    display: flex;
+    justify-content: center;
+}
+.footerFondoSelva p{
+    padding-top: 10em;
+    font-size: 2rem;
+    text-align: center;
+    width: 80%;
+}
+.footerFondoSelva p a{
+    text-decoration: none;
+    color: #f2decfff;
+}
+footer{
+    background-color: #00af8dff;
+    height: 1500px;
+    margin-top: -10px;
+}
+.footerVerde{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-self: center;
+    justify-content: center;
+    gap: 10em;
+    color: #f0dfd2ff;
+    height: 1500px;
+}
+.resources{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:1em;
+}
+.resources p{
+    font-size: 2rem;
+}
+.resources a{
+    font-size: 5rem;
+    text-decoration: none;
+    color: #f0dfd2ff;
+}
+.resources a:hover{
+    opacity: 30%;
+}
+.connect{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contact p{
+    font-size: 2rem;
+}
+.contact a{
+    font-size: 5rem;
+    text-decoration: none;
+    color: #f0dfd2ff;
+}
+.contact a:hover{
+    opacity: 30%;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+}
+.redes p{
+    font-size: 2rem;
+}
+.redes a{
+    font-size: 5rem;
+    text-decoration: none;
+    color: #f0dfd2ff;
+}
+.redes a:hover{
+    opacity: 30%;
+}
+@media only screen and (min-width: 992px){
+    .gridIndex{
+        grid-template-columns: repeat(3,1fr);
+    }
+    header{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    main{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 80rem;
+    }
+    .anuncio{
+        font-size: 1.8rem;
+    }
+    .logo{
+        width: 30rem;
+       
+    }
+   .fotoBread{
+       width: 600px;
+   }
+   .textoIndex{
+    display: flex;
+    flex-direction: row;
+    }
+    .textoIndex p{
+        width: 30%;
+    }
+    .cocinerosDiv{
+        flex-direction: row;
+    }
+    .cocinerosFoto{
+        width: 300px;
+    }
+    .fondomariposa{
+        height: 160rem;
+    }
+    .footerVerde{
+        flex-direction: row;
+        height: 65rem;
+        padding-top: 10em;
+    }
+    .resources{
+        padding-top: 0em;
+    }
+    .footerFondoSelva{
+        background-image: url(../img/fondoselva.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        color: #f2decfff;
+        display: flex;
+        justify-content: center;
+    }
+}
